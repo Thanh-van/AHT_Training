@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1230px)  {
+  .nav-link .main-menu li {
+    margin-right: 22px;
+  }
+  .container{
+    max-width: 85%;
+  }
+}
+@media only screen and (max-width: 1032px)  {
+  .container{
+    max-width: 85%;
+  }
+  .shop__cart__main{
+    display: none;
+  }
+  .baner-01-text {
+    right: 8%;
+    top: 57.5%;
+  }
+  
+  .nav-link{
+		width: 60%;
+		top: 0;
+		position: fixed;
+		background: #ffffff;
+		left: 100%;
+		transition: all .3s ease;
+	}
+  .nav-link .main-menu li{
+    text-align: center;
+    display: block;
+    line-height: 2.5em;
+  }
+	.Menu_bar{
+		top: 0;
+    text-align: center;
+    width: 60%;
+		left: 40%;
+		transition: all .3s ease;
+	}
+  .shop-fls .main-menu li.nav-bars{	display: inline-block;}
+  .ft-t{ max-width: 100%; }
+  .ft-t .container{max-width: 100%;}
+  .ft{  margin-top: 3%;  order: 2; }
+  .blog-txt{padding: 7% 5%}
+  .blog-name h3,.blog-text p,.top-menu__left p{
+    overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  }
+  .blog-name h3,.top-menu__left p{margin-bottom: 3%;-webkit-line-clamp: 1; }
+  .top-menu__left p{margin-bottom: 0; }
+    .blog-text p{       -webkit-line-clamp: 4; }
+  .footer .Copyright .col-md-2:last-child{max-width: 25%;}
+    .footer .Copyright .col-md-2:first-child{max-width: 75%;}
+    
+}
+@media only screen and (max-width: 785px){
+  .baner-txt-top,.baner-txt-down{
+    left: 20%;
+    top: 45%
+  }
+  .menu-bar .container-fluid {   height: auto;}
+  .menu-bar .shop-fls li{    padding: 5% 0;  }
+  .baner-txt-down a.show-now{margin-top: 5%;}
+  .baner-01-text h2{font-size: 25px;}
+  .baner-txt h2{font-size: 14px}
+  .product .col-md-3{
+    max-width: 31.5%;
+  }
+}
+@media only screen and (max-width: 424px)  {
+  
+  .top-menu{    padding: 1.5% 0;  }
+  .blog .container{
+    overflow-x: hidden
+  }
+  .menu-bar .logo{max-width: 50%;}
+  .product .col-md-3{   max-width: 49%;  }
+  .banner .col-md-8,.banner .col-md-4{  max-width: 100%;  }
+}

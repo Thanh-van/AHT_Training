@@ -4,21 +4,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<script
+src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" integrity="" crossorigin="anonymous"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/JavaScript.js"></script>
 </head>
 <body>
 	<div class="header">
 		<div class="top-menu">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col col-md-2">
+					<div class="top-menu__left">
 						<div class="top-title">
 							<p><img src="img/images/icon-top.png" alt=""> Welcome to Franco - an e-Commerce PSD Template!</p>
 						</div>
 					</div>
-					<div class="col col-md-2">
+					<div class="top-menu__right">
 						<div class="row seting-login right">
 							<p><i class="fas fa-cog"></i> Shop Setting</p>
 							<p><i class="fas fa-lock"></i> Member Login</p>
@@ -42,14 +49,31 @@
 							<li><a href="">BLOG</a></li>
 							<li><a href="">Collections</a></li>
 							<li><a href="">Contact</a></li>
-							<li><a href=""><i class="fas fa-search"></i></a></li>
+							<li onclick="seach();"><i class="fas fa-search"></i></li>
 						</ul>
 					</div>
 					<div class="shop-fls">
 						<ul class="main-menu">
 							<li><a href=""><i class="pe-7s-like"></i></a></li>
-							<li><a href=""></a><i class="pe-7s-cart"></i></li>
+							<li><a href=""><i class="pe-7s-cart"></i></a>
+								<div class="shop__cart__main">
+									<div class="shop__cart__row">
+										<div class="shop__cart__item">
+											<div class="cart__item__img">
+												<a href=""><img src="img/images/sp01.jpg" alt=""></a>
+											</div>
+											<div class="cart__item__name">
+												<p>Suspendisse id volutpat</p>
+											</div>
+											<div class="cart__item__price">$100</div>
+											<div class="delete"><i class="fas fa-trash"></i></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-bars" onclick="nav_bar();"><i class="fas fa-bars"></i></li>
 						</ul>
+						
 					</div>
 				</div>
 			</div>
@@ -68,7 +92,7 @@
 							</div>
 							<div class="baner-01-text">
 								<h2>Two High-end Materials</h2>
-								<a class="show-now" href="">Show Now</a>
+								<a class="show-now" href="">Shop Now</a>
 							</div>
 						</div>
 					</div>
@@ -93,7 +117,7 @@
 							<div class="baner-txt baner-txt-down">
 								<h2>folio</h2>
 								<h2 class="bold">backpack</h2>
-								<a class="show-now" href="">Show Now</a>
+								<a class="show-now" href="">Shop Now</a>
 							</div>
 						</div>
 					</div>
@@ -112,7 +136,7 @@
 						<div class="item-product">
 							<div class="img-product">
 								<img src="img/images/sp01.jpg" alt="">
-								<div class="add-cart"><a href="">add to cart</a></div>
+								<div class="add-cart" ><span> add to cart</span></div>
 							</div>
 							<div class="text-product">
 								<div class="product-name">
@@ -137,7 +161,7 @@
 						<div class="item-product">
 							<div class="img-product">
 								<img src="img/images/sp02.jpg" alt="">
-								<div class="add-cart"><a href="">add to cart</a></div>
+								<div class="add-cart" ><span> add to cart</span></div>
 							</div>
 							<div class="text-product">
 								<div class="product-name">
@@ -163,7 +187,7 @@
 						<div class="item-product">
 							<div class="img-product">
 								<img src="img/images/sp03.jpg" alt="">
-								<div class="add-cart"><a href="">add to cart</a></div>
+								<div class="add-cart" ><span> add to cart</span></div>
 							</div>
 							<div class="text-product">
 								<div class="product-name">
@@ -179,7 +203,7 @@
 									</ul>
 								</div>
 								<div class="product-price">
-									<p><del>$99.00</del> <span class="price-new"> $84.00</span></p>
+									<p><span class="price-new"> $84.00</span></p>
 								</div>
 							</div>
 						</div>
@@ -188,7 +212,7 @@
 						<div class="item-product">
 							<div class="img-product">
 								<img src="img/images/sp04.jpg" alt="">
-								<div class="add-cart"><a href="">add to cart</a></div>
+								<div class="add-cart" ><span> add to cart</span></div>
 							</div>
 							<div class="text-product">
 								<div class="product-name">
@@ -213,7 +237,7 @@
 						<div class="item-product">
 							<div class="img-product">
 								<img src="img/images/sp05.jpg" alt="">
-								<div class="add-cart"><a href="">add to cart</a></div>
+								<div class="add-cart" ><span> add to cart</span></div>
 							</div>
 							<div class="text-product">
 								<div class="product-name">
@@ -238,11 +262,11 @@
 						<div class="item-product">
 							<div class="img-product">
 								<img src="img/images/sp06.jpg" alt="">
-								<div class="add-cart"><a href="">add to cart</a></div>
+								<div class="add-cart" ><span>add to cart</span></div>
 							</div>
 							<div class="text-product">
 								<div class="product-name">
-									<p>Suspendisse id volutpat</p>
+									<p>Lorem ipsum dolor</p>
 								</div>
 								<div class="product-star">
 									<ul class="main-menu">
@@ -254,7 +278,7 @@
 									</ul>
 								</div>
 								<div class="product-price">
-									<p><del>$99.00</del> <span class="price-new"> $84.00</span></p>
+									<p><del>$99.00</del> <span class="price-new">  $84.00</span></p>
 								</div>
 							</div>
 						</div>
@@ -263,11 +287,11 @@
 						<div class="item-product">
 							<div class="img-product">
 								<img src="img/images/sp07.jpg" alt="">
-								<div class="add-cart"><a href="">add to cart</a></div>
+								<div class="add-cart" ><span> add to cart</span></div>
 							</div>
 							<div class="text-product">
 								<div class="product-name">
-									<p>Suspendisse id volutpat</p>
+									<p>Proin sed nulla mi</p>
 								</div>
 								<div class="product-star">
 									<ul class="main-menu">
@@ -279,7 +303,7 @@
 									</ul>
 								</div>
 								<div class="product-price">
-									<p><del>$99.00</del> <span class="price-new"> $84.00</span></p>
+									<p><span class="price-new"> $84.00</span></p>
 								</div>
 							</div>
 						</div>
@@ -288,11 +312,11 @@
 						<div class="item-product">
 							<div class="img-product">
 								<img src="img/images/sp08.jpg" alt="">
-								<div class="add-cart"><a href="">add to cart</a></div>
+								<div class="add-cart" ><span> add to cart</span></div>
 							</div>
 							<div class="text-product">
 								<div class="product-name">
-									<p>Suspendisse id volutpat</p>
+									<p>Aenean placerat</p>
 								</div>
 								<div class="product-star">
 									<ul class="main-menu">
@@ -314,96 +338,263 @@
 		</div>
 		<div class="blog">
 			<div class="blog-title">
-					<p>franco</p>
-					<h2>Featured items</h2>
+					<p>latest</p>
+					<h2>news & Events</h2>
 					<hr>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col col-md-4">
-						<div class="blog-item">
-							<div class="blog-img">
-								<img src="img/images/blog1.png" alt="">
-								<div class="blog-date">
-									<div class="date-text">
-										<p>Jan</p>
-										<h3>23</h3>
+			<div class="blog__main">
+				<div class="blog__main__item blog__main__item1">
+					<div class="container">
+						<div class="row">
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog2.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>In commodo dolor vitae</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="blog-text">
-								<div class="blog-txt">
-									<div class="blog-name"><h3>In commodo dolor vitae</h3></div>
-									<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
-								</div>
-								<div class="blog-cmt">
-									<ul class="main-menu">
-										<li><a href=""><i class="far fa-comment"></i> 12</a></li>
-										<li><a href=""><i class="far fa-heart"></i> 6</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col col-md-4">
-						<div class="blog-item">
-							<div class="blog-img">
-								<img src="img/images/blog2.png" alt="">
-								<div class="blog-date">
-									<div class="date-text">
-										<p>Jan</p>
-										<h3>23</h3>
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog3.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>Vivamus non dignissim elit</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="blog-text">
-								<div class="blog-txt">
-									<div class="blog-name"><h3>In commodo dolor vitae</h3></div>
-									<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
-								</div>
-								<div class="blog-cmt">
-									<ul class="main-menu">
-										<li><a href=""><i class="far fa-comment"></i> 12</a></li>
-										<li><a href=""><i class="far fa-heart"></i> 6</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col col-md-4">
-						<div class="blog-item">
-							<div class="blog-img">
-								<img src="img/images/blog3.png" alt="">
-								<div class="blog-date">
-									<div class="date-text">
-										<p>Jan</p>
-										<h3>23</h3>
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog1.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="blog-text">
-								<div class="blog-txt">
-									<div class="blog-name"><h3>In commodo dolor vitae</h3></div>
-									<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
-								</div>
-								<div class="blog-cmt">
-									<ul class="main-menu">
-										<li><a href=""><i class="far fa-comment"></i> 12</a></li>
-										<li><a href=""><i class="far fa-heart"></i> 6</a></li>
-									</ul>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>Ut lacinia erat ut diam volutpat</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-					<div class="btn-slide">
-						<ul class="main-menu">
-							<li><a class="btn" href=""></a></li>
-							<li><a class="btn btn-active" href=""></a></li>
-							<li><a class="btn" href=""></a></li>
-						</ul>
+				<div class="blog__main__item blog__main__item2">
+					<div class="container">
+						<div class="row">
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog1.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>In commodo dolor vitae</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog2.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>Vivamus non dignissim elit</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog3.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>Ut lacinia erat ut diam volutpat</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>
+				<div class="blog__main__item blog__main__item3">
+					<div class="container">
+						<div class="row">
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog3.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>In commodo dolor vitae</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog1.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>Vivamus non dignissim elit</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-md-4">
+								<div class="blog-item">
+									<div class="blog-img">
+										<img src="img/images/blog2.png" alt="">
+										<div class="blog-date">
+											<div class="date-text">
+												<p>Jan</p>
+												<h3>23</h3>
+											</div>
+										</div>
+									</div>
+									<div class="blog-text">
+										<div class="blog-txt">
+											<div class="blog-name"><h3>Ut lacinia erat ut diam volutpat</h3></div>
+											<div class="blog-context"><p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p></div>
+										</div>
+										<div class="blog-cmt">
+											<ul class="main-menu">
+												<li><a href=""><i class="far fa-comment"></i> 12</a></li>
+												<li><a href=""><i class="far fa-heart"></i> 6</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+	
+			<div class="btn-slide">
+				<ul class="main-menu">
+					<li><span class="btn bt1" href="" onclick="slide(1)"></span></li>
+					<li><span class="btn bt2" onclick="slide(2)" href=""></span></li>
+					<li><span class="btn bt3" onclick="slide(3)" href=""></span></li>
+				</ul>
+			</div>
 				
 		</div>
 	</div>
@@ -440,7 +631,7 @@
 						</div>
 						<div class="container">
 							<div class="row">
-								<div class="col-md-2">
+								<div class="col col-md-2">
 									<div class="f-title">
 										<p>Home</p>
 										<p>About Us</p>
@@ -450,8 +641,8 @@
 										<p>Contact Us</p>
 									</div>
 								</div>
-								<div class="col-md-2">
-									<div class="f-title">
+								<div class="col col-md-2">
+									<div class="f-title f2">
 										<p>FAQs</p>
 										<p>Featured Brands</p>
 										<p>Gift Vouchers</p>
@@ -483,6 +674,7 @@
 				</div>
 			</div>
 		</div>
+		<!---------Chân Trang--------->
 		<div class="Copyright">
 			<div class="container">
 				<div class="row">
@@ -498,13 +690,27 @@
 								<li><a href=""><i class="fab fa-cc-paypal"></i></a></li>
 								<li><a href=""><i class="fab fa-cc-mastercard"></i></a></li>
 								<!-- 2 icon cuối nhìn không rõ nên em dùng tạm-->
-								<li><a href=""><i class="fab fa-cc-mastercard"></i></a></li>
-								<li><a href=""><i class="fab fa-cc-mastercard"></i></a></li>
+								<li><a href=""><i class="fab fa-cc-discover"></i></a></li>
+								<li><a href=""><i class="fab fa-cc-amex"></i></a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="seach_box">
+		<div class="seach__main">
+			<div  class="seach_close_icon">
+				<p  onclick="seach_close();"><i class="fas fa-times"></i></p>
+			</div>
+			<div class="seach">
+				<input type="text" id="tags" placeholder="seach.." name="">
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+		<div onclick="seach_close()" class="seach_opacity">
+			
 		</div>
 	</div>
 </body>
