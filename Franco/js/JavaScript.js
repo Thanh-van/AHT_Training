@@ -1,11 +1,12 @@
 function slide(a) {
+	console.log("hihi");
 	var	slider_show=$('.blog__main');
 	var key=".blog__main__item"+a;
 	children__slide(slider_show,key,'show');
 	var item_click=$('.btn-slide ul li');
 	key=".bt"+a;
 	children__slide(item_click,key,'btn-active');
-}
+	}
 function children__slide(a,key,name) {
 	a.children().removeClass(name);
 	a.children(key).addClass(name);
@@ -90,4 +91,5 @@ $(document).ready(function(){
    Remove_item_cart(); 
    add_cart();
    Autocomplete();
+
 });

@@ -75,11 +75,11 @@ img{
 .seach input:focus{border: none;}
 .seach input{
 	padding-left: 2%;
-  outline: none;
+	outline: none;
 	border: none;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-		box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 2px 0;
 }
 .seach_close_icon{
@@ -117,8 +117,8 @@ img{
 	width: 0;
 	height: 0;
 	border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #dcdde1;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #dcdde1;
 	margin-top: -10px;
 }
 .shop__cart__main{
@@ -159,7 +159,7 @@ img{
 .cart__item__name{	width: 65%;}
 .cart__item__name p{
 	overflow: hidden;
-  text-overflow: clip;
+	text-overflow: clip;
 	margin-left: 5%;
 }
 .delete{
@@ -172,7 +172,7 @@ img{
 .top-menu {
 	width: 100%;
 	background: #222222;
-    height: 46px;
+	height: 46px;
 	color: #525252;
 	font-size: 14px;
 }
@@ -180,8 +180,8 @@ img{
 .top-menu .seting-login p:first-child{ margin-left: 0px;}
 .top-menu .seting-login i{	font-size: 12px;}
 .header .row {
-    align-items: center;
-    height: 100%;
+	align-items: center;
+	height: 100%;
 }
 .container-fluid{
 	max-width: 100%;
@@ -190,6 +190,7 @@ img{
 }
 .menu-bar .container-fluid{
 	height: 80px;
+	margin-right: 4px;
 }
 .menu-bar{
 	border-bottom: 1px solid #dddddd;
@@ -208,9 +209,10 @@ img{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
-  text-transform: uppercase;
-  position: relative;
+	text-transform: uppercase;
+	position: relative;
 	display: block;
+	margin-left: -68px;
 }
 .nav-link li a{
 	color: #000000;
@@ -232,7 +234,7 @@ img{
 .shop-fls .main-menu li:last-child{	margin-right: 0;}
 .shop-fls i{
 	font-size: 28.4px;
-  margin-top: 3px;
+	margin-top: 3px;
 	color: black;
 }
 /*Phần banner*/
@@ -247,16 +249,16 @@ img{
 	margin-top: 7%;
 }
 .baner-01-text{
-	right: 93px;
-    top: 319px;
-    position: absolute;
+	right: 94px;
+	top: 319px;
+	position: absolute;
 }
 .baner-01-text h2{
 	font-size: 30px;
-  font-family: "Pacifico";
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  text-align: left;
+	font-family: "Pacifico";
+	color: rgb(0, 0, 0);
+	line-height: 1.2;
+	text-align: left;
 }
 .baner-01-text a{
 	float: right;
@@ -267,7 +269,7 @@ img{
 }
 .baner-txt h2{
 	font-size: 16px;
-  font-family: "Montserrat";
+	font-family: "Montserrat";
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #616161;
@@ -281,52 +283,53 @@ h2.bold{
 }
 .baner-txt-top{
 	left: 57px;
-    top: 85px;
+	top: 86px;
 }
 .baner-txt-down{
-	left: 40px;
-    top: 121px;
+	left: 39px;
+	top: 121px;
 }
 .baner-txt-down a.show-now{
 	float: left;
-    margin-top: 17px;
-    padding: 11px 16px;
-    padding-left: 22px;
-    margin-left: 1px;
+	margin-top: 17px;
+	padding: 11px 16px;
+	padding-left: 22px;
+	margin-left: 1px;
 }
 a.show-now {
 
-    margin-top: 12px;
-    font-size: 14px;
-    background: #8262b5;
-    padding: 12px 16.5px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    font-weight: 400;
-    text-align: center;
+	margin-top: 12px;
+	font-size: 14px;
+	background: #8262b5;
+	padding: 12px 16.5px;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	font-weight: 400;
+	text-align: center;
 }
 
 /*Phần product*/
 .product-title,.blog-title{
 	margin-top: 73px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Montserrat";
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "Montserrat";
+	margin-left: -2px;
 }
 .product-title p,.blog-title p{
 	font-size: 12px;
-    color: rgb(130, 98, 181);
-    letter-spacing: .5em;
-    font-family: "Montserrat";
-    font-weight: bold;
+	color: rgb(130, 98, 181);
+	letter-spacing: .5em;
+	font-family: "Montserrat";
+	font-weight: bold;
 }
 .product-title h2,.blog-title h2{
 	font-size: 24px;
 	margin-top: 11px;
-  font-family: "Montserrat";
-  color: rgb(0, 0, 0);
-  letter-spacing: .1em;
+	font-family: "Montserrat";
+	color: rgb(0, 0, 0);
+	letter-spacing: .1em;
 }
 .product-title hr,.blog-title hr{
 	background-color: rgb(130, 98, 181);
@@ -343,13 +346,12 @@ a.show-now {
 }
 .img-product .add-cart{
 	position: absolute;
-    
-    background: #ffffff;
-    text-transform: uppercase;
-    color: #424242;
-    bottom: 8.2px;
-    left: 7.5px;
-}
+	
+	background: #ffffff;
+	text-transform: uppercase;
+	color: #424242;
+	bottom: 9px;
+	left: 5.5px;
 }
 .add-cart:hover span{
 	color: #8262b5;
@@ -361,29 +363,30 @@ a.show-now {
 	font-size: 12px;
 	font-weight: 400;
 	color: rgb(66, 66, 66);
-  line-height: 2.167;
+	line-height: 2.167;
 }
 .product-name p{
-	margin-top: 13px;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(0, 0, 0);
-    letter-spacing: -.3px;
-    font-weight: 600;
+	margin-top: 14px;
+	font-size: 14px;
+	font-family: "Montserrat";
+	color: rgb(0, 0, 0);
+	letter-spacing: -.4px;
+	font-weight: 600;
 }
-.product-price{	margin-top: 8px}
+.product-price{	margin-top: 7px}
 .product-price p{
 	font-size: 16px;
 	color: #999999;
 	font-family: 'Open Sans', sans-serif;
+	letter-spacing: -.2px;
 }
 .product-star {
-    margin-top: 8px;
-    margin-left: 1px;
-   }
+	margin-top: 8px;
+	margin-left: 1px;
+}
 .product-star i{
-	   letter-spacing: -2.5px;
-    font-size: 11.2px;
+	letter-spacing: -2.5px;
+	font-size: 11.2px;
 }
 .star-true{
 	color: #f8ba04;
@@ -403,9 +406,9 @@ a.show-now {
 	background: url("../img/images/backgroup.png");
 	margin-top: 30px; 
 	height: 708px;
-	 background-position: center; 
-	 background-repeat: no-repeat;
-	 background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover; 
 }
 .blog-title {
 	margin: 0;
@@ -429,19 +432,19 @@ a.show-now {
 	background: #a1d1dd;
 	color: #ffffff;
 	top: 23px;
-    left: 21px;
+	left: 21px;
 }
 .date-text{
-		font-family: 'Montserrat', sans-serif;
-	    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #ffffff;
-        width: 50px;
-    height: 50px;
-    box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	border: 1px solid #ffffff;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
 }
 .date-text h3{
 	margin-bottom: 5px;
@@ -470,12 +473,12 @@ a.show-now {
 }
 .blog-cmt{
 	padding-left: 21px;
-    display: flex;
-    align-items: center;
-    height: 53px;
+	display: flex;
+	align-items: center;
+	height: 53px;
 }
 .blog-cmt li {
-    margin-right: 29px;
+	margin-right: 29px;
 }
 .blog-cmt a{
 	font-family: 'Open Sans', sans-serif;
@@ -485,9 +488,9 @@ a.show-now {
 .blog-txt h3{
 	font-weight: 500;
 	font-size: 16px;
-  line-height: 1.225;
+	line-height: 1.225;
 	margin-bottom: 18px;
-	    letter-spacing: -.19px;
+	letter-spacing: -.19px;
 }
 .blog-text h3:hover {
 	color: #8262b5;
@@ -495,11 +498,11 @@ a.show-now {
 .blog-txt p{
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
-  color: rgb(66, 66, 66);
-  line-height: 1.571;
+	color: rgb(66, 66, 66);
+	line-height: 1.571;
 	font-weight: 400;
-	 text-align: left; 
-	 letter-spacing: .27px;
+	text-align: left; 
+	letter-spacing: .27px;
 }
 .blog .btn-slide{
 
@@ -541,7 +544,7 @@ span.btn-active{
 /*phần footer*/
 .footer{
 	font-weight: 400;
-	padding-top: 62px;
+	padding-top: 61px;
 	font-family: 'Open Sans', sans-serif;
 	background: #222222;
 }
@@ -557,8 +560,8 @@ span.btn-active{
 .footer p,.footer i{
 	font-size: 14px;
 	color: #888888;
-	 line-height: 22px;
-    letter-spacing: 0.3px;
+	line-height: 22px;
+	letter-spacing: 0.3px;
 }
 .footer .shop-location i{
 	float: left;
@@ -570,9 +573,9 @@ span.btn-active{
 	margin-bottom: 20px;
 }
 .shop-location p,.shop-location i{
-	    line-height: 32px;
-       margin-top: 1px;
-    letter-spacing: 0.01em;
+	line-height: 32px;
+	margin-top: 1px;
+	letter-spacing: 0.01em;
 }
 .shop-location .f-right{
 	padding-right: 30px;
@@ -586,7 +589,7 @@ span.btn-active{
 	font-weight: 400;
 	color: #f7f7f7;
 	font-size:16px;
-	    letter-spacing: .05em;
+	letter-spacing: 0.035em;
 }
 .footer p.f-active{
 	color: #ffffff;
@@ -602,7 +605,7 @@ span.btn-active{
 	margin-right: 28px;
 }
 .f-icon-about i{
-  font-size: 16px;
+	font-size: 16px;
 }
 .f2{
 	margin-top: 2px;
@@ -613,11 +616,11 @@ span.btn-active{
 	padding-bottom: 35px;
 }
 i.fa-phone {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 .ft{
 	max-width: 262px;
@@ -645,43 +648,43 @@ i.fa-phone {
 }
 .blog__main__item{
 	animation-name: fade;
-  animation-duration: 1s;
+	animation-duration: 1s;
 	display: none;
 	margin-left: -100px;
 }
 @-webkit-keyframes fade {
-   from {opacity: .4}
-   to {opacity: 1}
- }
+	from {opacity: .4}
+	to {opacity: 1}
+}
 @keyframes fade {
-   from {
-		 opacity: .4}
-   to {opacity: 1;
-		 
+	from {
+		opacity: .4}
+		to {opacity: 1;
+			
+		}
 	}
- }
-.show{
-	display: block;
-	margin-left: 0;
-	width: 100%;
-}
-/*------------------Create Autocomplate---------------------*/
-#ui-id-1{
-	position: fixed !important;
-	list-style: none;
-	background: #ffffff;
-	z-index: 10000;
-	width: 450px !important;
-}
-#ui-id-1 li{
+	.show{
+		display: block;
+		margin-left: 0;
+		width: 100%;
+	}
+	/*------------------Create Autocomplate---------------------*/
+	#ui-id-1{
+		position: fixed !important;
+		list-style: none;
+		background: #ffffff;
+		z-index: 10000;
+		width: 450px !important;
+	}
+	#ui-id-1 li{
 
-	line-height: 35px;
-}
-.ui-menu-item-wrapper{
-	padding-left: 15px;	
-}
-.ui-state-active{
-	font-size: 17px;
-	background: #3399FF;
-	color: #ffffff;
-}
+		line-height: 35px;
+	}
+	.ui-menu-item-wrapper{
+		padding-left: 15px;	
+	}
+	.ui-state-active{
+		font-size: 17px;
+		background: #3399FF;
+		color: #ffffff;
+	}
