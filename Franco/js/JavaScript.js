@@ -87,7 +87,6 @@ function Autocomplete() {
 }
 
 $(document).ready(function(){
-	slide(2);
    Remove_item_cart(); 
    add_cart();
    Autocomplete();
