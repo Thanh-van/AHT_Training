@@ -110,7 +110,7 @@ img{
 	position: relative;
 }
 .shop__cart__main:after{
-	content: '.';
+	content: '';
 	position: absolute;
 	top: 0;
 	right: 2%;
@@ -190,7 +190,6 @@ img{
 }
 .menu-bar .container-fluid{
 	height: 80px;
-	margin-right: 4px;
 }
 .menu-bar{
 	border-bottom: 1px solid #dddddd;
@@ -229,11 +228,11 @@ img{
 }
 .shop-fls .main-menu li{
 	padding: 22px 0;
-	margin-right: 25px;
+    margin-left: 22px;
 }
-.shop-fls .main-menu li:last-child{	margin-right: 0;}
+.shop-fls .main-menu li:last-child{	margin-left: 0;}
 .shop-fls i{
-	font-size: 28.4px;
+	font-size: 30px;
 	margin-top: 3px;
 	color: black;
 }

@@ -1,3 +1,35 @@
+@media only screen and (min-width: 1910px)  {
+  .header .container-fluid{
+    margin-right: 13px;
+  }
+  .container{
+    margin-left: 20.5%;
+  }
+  .ft-t .container{margin-left: 0px;}
+  .nav-link{
+    margin-left: -45px;
+  }
+  .blog-title {
+    margin-left: 19px;
+  }
+  .blog .btn-slide{
+    margin-left: 10px;
+  }
+  .main-menu li {
+    display: inline-block;
+  }
+  .blog-cmt li {
+    margin-right: 27px;
+  }
+  .navigation .row .f-title{
+    margin-top: 1px;
+    margin-left: -1px; 
+  }
+  .navigation .row .f2{
+    margin-top: 3px;
+    margin-left: 13px;
+  }
+}
 @media only screen and (max-width: 1230px)  {
   .nav-link .main-menu li {
     margin-right: 22px;
