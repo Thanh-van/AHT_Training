@@ -5,6 +5,9 @@
   .container{
     max-width: 85%;
   }
+  .nav-link{
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 1032px)  {
   .container{
@@ -19,26 +22,26 @@
   }
   
   .nav-link{
-		width: 60%;
-		top: 0;
-		position: fixed;
-		background: #ffffff;
-		left: 100%;
-		transition: all .3s ease;
-	}
+    width: 60%;
+    top: 0;
+    position: fixed;
+    background: #ffffff;
+    left: 100%;
+    transition: all .3s ease;
+  }
   .nav-link .main-menu li{
     text-align: center;
     display: block;
     line-height: 2.5em;
   }
-	.Menu_bar{
-		top: 0;
+  .Menu_bar{
+    top: 0;
     text-align: center;
     width: 60%;
-		left: 40%;
-		transition: all .3s ease;
-	}
-  .shop-fls .main-menu li.nav-bars{	display: inline-block;}
+    left: 40%;
+    transition: all .3s ease;
+  }
+  .shop-fls .main-menu li.nav-bars{ display: inline-block;}
   .ft-t{ max-width: 100%; }
   .ft-t .container{max-width: 100%;}
   .ft{  margin-top: 3%;  order: 2; }
